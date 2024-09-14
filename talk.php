@@ -72,7 +72,7 @@
         <input type="text" name="fname" class="p-2 feature-border">
         </label>
         <label class="w-1/2 flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray opacity-80 lora-400">Last Name
-            <input type="text" name="fname" class="feature-border p-2">
+            <input type="text" name="lname" class="feature-border p-2">
         </label>
         </div>
         <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray opacity-80 mb-8 lora-400">Your Email Address
