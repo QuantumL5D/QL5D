@@ -159,6 +159,11 @@ font-style: normal;
 .img-border-radius {
   border-radius: 45%;
 }
+
+.error {
+  border: 2px solid rgba(0, 102, 255, 0.767);
+}
+
 .li > li {
   padding: 20px;
   margin: 10px;;
