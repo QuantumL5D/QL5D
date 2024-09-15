@@ -148,7 +148,9 @@ font-style: normal;
 }
 
 
-
+.top-10 {
+  top: 10%;
+}
 .li > li {
   display: flex;
   border-radius: 50%;
