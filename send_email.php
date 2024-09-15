@@ -17,4 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo 'Sorry, there was an error sending your message. Please try again.';
     }
 }
+
+header('Location: success.php');
+exit();
 ?>
