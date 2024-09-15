@@ -77,8 +77,8 @@
 </div>
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-80">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-80">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
                
     </div>
 </div>
