@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Sent</title>
+    <title>Sent! QL5D </title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
 </head>
 <body class="background-gradient">
     <div class="flex flex-col justify-between min-h-screen">
-    <div class="absolute w-1/2 top-0 right-0">
+    <div class="absolute w-full sm:w-3/4 lg:w-1/2 top-0 right-0">
             <img src="img/sunStar1.svg" alt="Sun Background" class="w-full rotate-180 opacity-20 object-cover h-full">
         </div>
 
@@ -64,24 +64,36 @@
    
       <div>
         <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark text-centerd mb-4 text-center playfair-display-500">Thank you!</h1>
-        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray opacity-80 text-center mb-6 lora-400 ">Your message has been sent successfully. We will get back to you soon.</p>
+        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray opacity-90 text-center mb-6 lora-400 ">Your message has been sent successfully. We will get back to you soon.</p>
         </div>
-        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover:opacity-80 p-3 dark-gray">Go Back to Home</a>
+        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover:opacity-90 p-3 dark-gray">Go Back to Home</a>
       
       
         </div>
    
-<div id="footer" class="h-full relative pb-2">
+        <div id="footer" class="h-full relative pb-2">
     <div class="absolute top-0 left-0 ">
         <img src="img/sunStar1.svg" alt="Sun Background" class="h-52 top-20 opacity-20">
 </div>
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
+        
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
-               
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
+            <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
+                <a href="#top" 
+                   @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
+                   class="dark-gray button-border handjet-700 cursor-pointer hover:opacity-80 font-bold p-3">
+                  Back to Top
+                </a>
+               <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
+              <a href="QuantumLyndsey5D@gmail.com"  target="blank">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
+               <a href="https://x.com/QuantmLyndsey5D"  target="blank"> <img src="img/twitter.png" class="w-6 md:w-8 md:h-8" alt="Twitter"/></a>
+              <a href="https://www.tiktok.com/@nocturnalrainbows823"  target="blank">  <img src="img/tiktok.png"  class="w-6 md:w-8 md:h-8" alt="TikTok"/></a>
+              </div>
+              
     </div>
-</div>
+    </div>
 </div>
 <script>
     const icons = document.querySelectorAll('.icon');

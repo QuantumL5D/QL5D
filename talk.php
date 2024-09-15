@@ -10,16 +10,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <style>
-        .error {
-  border: 2px solid rgba(0, 102, 255, 0.767);
-}
-</style>
 </head>
 <body>
 <body class="background-gradient min-h-screen">
 <div class="w-screen absolute top-0 left-0">
-            <img src="img/sunStar9.svg" alt="Sun Background" class="rotate-180 mx-auto opacity-20 object-cover w-2/3 h-full">
+            <img src="img/sunStar9.svg" alt="Sun Background" class="rotate-180 mx-auto opacity-20 object-cover w-full sm:w-2/3 h-full">
         </div>
     <div class="min-h-screen flex flex-col justify-between">
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
@@ -92,17 +87,29 @@
         </div>
 
 </div>
-<div id="footer" class="relative pb-2">
-    <div class="absolute bottom-0 left-0 ">
-        <img src="img/sunStar1.svg" alt="Sun Background" class="opacity-20">
+<div id="footer" class="h-full relative pb-2">
+    <div class="absolute top-0 left-0 ">
+        <img src="img/sunStar1.svg" alt="Sun Background" class="h-52 top-20 opacity-20">
 </div>
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
         
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
+            <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
+                <a href="#top" 
+                   @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
+                   class="dark-gray button-border handjet-700 cursor-pointer hover:opacity-80 font-bold p-3">
+                  Back to Top
+                </a>
+               <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
+              <a href="QuantumLyndsey5D@gmail.com"  target="blank">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
+               <a href="https://x.com/QuantmLyndsey5D"  target="blank"> <img src="img/twitter.png" class="w-6 md:w-8 md:h-8" alt="Twitter"/></a>
+              <a href="https://www.tiktok.com/@nocturnalrainbows823"  target="blank">  <img src="img/tiktok.png"  class="w-6 md:w-8 md:h-8" alt="TikTok"/></a>
+              </div>
+              
     </div>
-</div>
+    </div>
 </div>
 <script>
     const icons = document.querySelectorAll('.icon');
