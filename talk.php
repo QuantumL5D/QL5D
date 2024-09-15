@@ -103,7 +103,7 @@
                   Back to Top
                 </a>
                <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
-              <a href="QuantumLyndsey5D@gmail.com"  target="blank">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
+              <<a href="mailto:QuantumLyndsey5D.com">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
                <a href="https://x.com/QuantmLyndsey5D"  target="blank"> <img src="img/twitter.png" class="w-6 md:w-8 md:h-8" alt="Twitter"/></a>
               <a href="https://www.tiktok.com/@nocturnalrainbows823"  target="blank">  <img src="img/tiktok.png"  class="w-6 md:w-8 md:h-8" alt="TikTok"/></a>
               </div>
