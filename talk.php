@@ -63,7 +63,7 @@
            
         <div class="max-w-screen-xl mx-auto xl:py-10 lg:px-6 lg:py-7 px-3 py-3 relative">
         <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full mx-auto">Ask About Your Messages</h1>
-        <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 w-10/12 mx-auto text-center neg-letter">ask me anything or tell me anything</h2>
+        <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 w-10/12 mx-auto text-center neg-letter">ask me anythingq</h2>
 
     <form action="send_email.php" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
         <div class="flex lg:gap-4 w-full">
@@ -95,7 +95,7 @@
         
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
             <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am also a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QuantumL5D">QuantumL5D REPO</a></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray opacity-90">If you would like to look at the repository in GitHub...<a target="_blank" class="hover-link underline" href="https://github.com/QuantumL5D/QL5D">QuantumL5D REPO</a></p>
             <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
                 <a href="#top" 
                    @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})"
