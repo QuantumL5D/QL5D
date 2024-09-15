@@ -23,23 +23,10 @@ body {
     /* White */
 }
 
-:root {
-  /* Base colors */
-  --dark-gray: #2F2F2F;
-  /* Equivalent to Tailwind's closest color */
-
-  /* Opacity variations */
-  --opacity-40: 0.4;
-  --opacity-60: 0.6;
-
-  /* Gradient colors */
-  --gradient-start: #FFFEFA;
-  /* Lighter gray */
-  --gradient-middle: #FFF9E3;
-  /* Mid gray */
-  --gradient-end: #fcedd3;
-  /* White */
+html {
+  scroll-behavior: smooth;
 }
+
 .img-bg {
   background-color: var(--gradient-middle);
 }
@@ -160,9 +147,7 @@ font-style: normal;
   border-radius: 45%;
 }
 
-.error {
-  border: 2px solid rgba(0, 102, 255, 0.767);
-}
+
 
 .li > li {
   padding: 20px;

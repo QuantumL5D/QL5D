@@ -30,12 +30,11 @@
             class="mx-auto w-3/4 pb-10 h-3/5 fixed top-0 bg-dark-gray z-30 mobile-position mobile-radius flex gap-10 flex-col"
             x-bind:style="{ top: open ? '0%' : '-100%' }"
             style="transition: top 0.5s;">
-            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" >quantum{L5D}</div>
+            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" ><a href="index.html">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
                     <li class="!mx-0"><a href="index.html" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Let's Talk</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Explore</a></li>
+                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li>
                 </ul>
             </nav>
         </header>
@@ -55,12 +54,11 @@
     </div>
     <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
+            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
                     <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
-                    <li><a href="talk.php" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Let's Talk</a></li>
-                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Explore</a></li>
+                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li>
                 </ul>
             </nav>
         </header>
@@ -69,7 +67,7 @@
  
            
         <div class="max-w-screen-xl mx-auto xl:py-10 lg:px-6 lg:py-7 px-3 py-3 relative">
-        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letterinline-block">Leave Me a Message</h1>
+        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full mx-auto">Ask About Your Messages</h1>
         <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 w-10/12 mx-auto text-center neg-letter">ask me anything or tell me anything</h2>
 
     <form action="send_email.php" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">

@@ -26,12 +26,11 @@
             class="mx-auto w-3/4 pb-10 h-3/5 fixed top-0 bg-dark-gray z-30 mobile-position mobile-radius flex gap-10 flex-col"
             x-bind:style="{ top: open ? '0%' : '-100%' }"
             style="transition: top 0.5s;">
-            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" >quantum{L5D}</div>
+            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" ><a href="index.html">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">My Experience</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Let's Talk</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Explore</a></li>
+                    <li class="!mx-0"><a href="index.html" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
+                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,12 +50,11 @@
     </div>
     <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
+            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">My Experience</a></li>
-                    <li><a href="talk.php" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Let's Talk</a></li>
-                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Explore</a></li>
+                    <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
+                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li>
                 </ul>
             </nav>
         </header>
