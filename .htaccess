@@ -1,1 +1,3 @@
 DirectoryIndex comingSoon.html
+
+AddType image/svg+xml .svg .svgz
