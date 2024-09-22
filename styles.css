@@ -21,6 +21,24 @@ body {
     /* Mid gray */
     --gradient-end: #fcedd3;
     /* White */
+
+    --sunOpacity: 100%;
+
+   
+}
+
+.dark-theme {
+  --dark-gray: #D0D0D0; /* Instead of making it darker, we'll lighten it for readability in dark mode */
+
+  /* Opacity remains the same as it's already defined by a factor */
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+
+  /* Gradient colors for dark mode */
+  --gradient-start: #1E1E1E;  /* Dark gray */
+  --gradient-middle: #2C2C2C; /* Slightly lighter dark gray */
+  --gradient-end: #3A3A3A; 
+  --sunOpacity: 30%;
 }
 
 html {
@@ -29,6 +47,10 @@ html {
 
 .img-bg {
   background-color: var(--gradient-middle);
+}
+
+.sunOpacity {
+  opacity: var(--sunOpacity);
 }
 .work-sans-500 {
 font-family: "Work Sans", sans-serif;
