@@ -182,6 +182,9 @@ font-style: normal;
 .hover-link:hover {
   color: #0000FF;
 }
+.link {
+  color: #0000FF;
+}
 .flex-col-hover:hover {
   flex-direction: column;
 }
