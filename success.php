@@ -100,5 +100,6 @@ icons.forEach (icon => {
 });
 
 </script>
+<script src="colorThemeToggle.js"></script>
 </body>
 </html>

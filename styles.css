@@ -5,15 +5,27 @@ body {
     padding: 0;
 }
 
+/* Default to dark theme */
 :root {
-    /* Base colors */
-    --dark-gray: #2F2F2F;
-    --opacity-40: 0.4;
-    --opacity-60: 0.6;
+  --dark-gray: #E0E0E0; 
+  --contrast: #2f2f2f;
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+  --backgroundImage: url('img/bgImageDark.png');
 }
 
+/* Override for light theme */
+.light {
+  --dark-gray: #2F2F2F;
+  --contrast: #e0e0e0;
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+  --backgroundImage: url('img/bgImageLight.png');
+}
+
+
 .background-gradient {
-background-image: url(img/bgImageLight.png);
+background-image: var(--backgroundImage);
 background-size: cover;
   background-position: center; 
 
@@ -77,12 +89,12 @@ font-style: normal;
 
 
 .text-dark-gray-40 {
-  color: var(--dark-gray);
+  color: var(--contrast);
   opacity: var(--opacity-40);
 }
 
 .bg-dark-gray {
-  background-color: var(--dark-gray);
+  background-color: var(--contrast);
 }
 
 .text-dark-gray-60 {
@@ -123,7 +135,7 @@ font-style: normal;
   border-radius: 50%;
 }
 .light-button-border {
-  border: 2px solid var(--gradient-middle);
+  border: 2px solid var(--dark-gray);
   border-radius: 50%;
 }
 .feature-border {
@@ -229,7 +241,7 @@ gap: 20%;
   .nav-icon-1 span{
     width: 5px;
     height: 5px;
-    background-color: #2f2f2f;
+    background-color: var(--dark-gray);
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -237,7 +249,7 @@ gap: 20%;
   }
 
   .nav-icon-1 .open {
-    background-color: var(--gradient-middle);
+    background-color: var(--dark-gray);
   }
   .nav-icon-1:hover span{
     transform: scale(1.2);
