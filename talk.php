@@ -14,9 +14,6 @@
 </head>
 <body>
 <body class="background-gradient min-h-screen">
-<div class="w-screen absolute top-0 left-0">
-            <img src="img/sunStar9.svg" alt="Sun Background" class="rotate-180 mx-auto opacity-20 object-cover w-full sm:w-2/3 h-full">
-        </div>
     <div class="min-h-screen flex flex-col justify-between">
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
@@ -88,9 +85,6 @@
         </div>
 </div>
 <div id="footer" class="relative">
-    <div class="absolute z-1 bottom-0 left-0 ">
-        <img src="img/sunStar1.svg" alt="Sun Background" class="h-52 top-20 opacity-20">
-</div>
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
         
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
@@ -98,7 +92,6 @@
             <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
                <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
               <a href="mailto:QuantumLyndsey5D.com">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
-               <a href="https://x.com/QuantmLyndsey5D"  target="blank"> <img src="img/twitter.png" class="w-6 md:w-8 md:h-8" alt="Twitter"/></a>
               <a href="https://www.tiktok.com/@nocturnalrainbows823"  target="blank">  <img src="img/tiktok.png"  class="w-6 md:w-8 md:h-8" alt="TikTok"/></a>
               </div>
               
