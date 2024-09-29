@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.className += localStorage.getItem('theme') === 'light' ? ' light' : '';</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,9 +12,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/svg+xml">
-    <title>quantumL5D Home</title>
+    <title>quantumL5D Contribute</title>
 </head>
-<body class="background-gradient">
+<body class="background-gradient relative">
+    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
@@ -56,7 +63,7 @@
     <div id="hero" class="h-full relative mt-14 sm:mt-0 mb-10 lg:mb-40">
         <div class="max-w-screen-xl mx-auto xl:py-10 px-6 py-6 relative">
                 <div class="flex flex-col">
-                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10">Contributions</h1>
+                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10 dark-gray">Contributions</h1>
                     <div class="flex flex-col gap-3">
                     <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 neg-letter">I accpet the following methods for contributing</h2>
                     <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">Thank you for your contribution towards my efforts in helping you discover yourself with the help of your High Self. Your contribution not only supports this sacred work but also signifies your commitment to your personal growth and healing. </p>
@@ -68,13 +75,13 @@
                 </div>
                     <ul class="li work-sans-500 2xl:text-xl mt-10 lg:text-lg text-sm">
                         <div class="flex items-center flex-wrap">
-                            <li class="opacity-90">PayPal</li>
+                            <li class="opacity-90 dark-gray">PayPal</li>
                             <ul>
                                 <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 opacity-90">QuantumLyndsey5D@gmail.com</li>
                             </ul>
                         </div>
                         <div class="flex items-center flex-wrap">
-                        <li class="opacity-90">Cash App</li>
+                        <li class="opacity-90 dark-gray">Cash App</li>
                         <ul>
                             <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 opacity-90">$<span class="uppercase">QL5D</span></li>
                         </ul>

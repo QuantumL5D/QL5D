@@ -8,6 +8,7 @@ body {
 /* Default to dark theme */
 :root {
   --dark-gray: #E0E0E0; 
+  --in-between: #a5a5a580;
   --contrast: #2f2f2f;
   --opacity-40: 0.4;
   --opacity-60: 0.6;
@@ -17,10 +18,42 @@ body {
 /* Override for light theme */
 .light {
   --dark-gray: #2F2F2F;
+  --in-between: #2F2F2F90;
   --contrast: #e0e0e0;
   --opacity-40: 0.4;
   --opacity-60: 0.6;
   --backgroundImage: url('img/bgImageLight.png');
+}
+
+.in-between-bc {
+  border-color: var(--in-between);
+}
+
+/* Apply a transition to all elements or specific ones */
+html, body, div, span { /* Add other tags as necessary */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text colors */
+}
+
+
+.toggle-padding {
+  padding: 2px; /* Padding around the toggle */
+  display: inline-block; /* Keeps dimensions correct for padding */
+  position: relative;
+  width: 42px; /* Adjust width as needed */
+  height: 24px; /* Adjust height as needed */
+  background-color: var(--contrast); /* Light grey background */
+  border: 3px solid var(--in-between); /* In-between grey border */
+  border-radius: 9999px; /* Fully rounded ends */
+}
+.toggle-circle {
+  position: absolute;
+  top: 0; /* 2px from the top of the parent container */
+  left: 0; /* Starts 2px from the left, will translate to right */
+  width: 18px; /* Adjust size of the circle */
+  height: 18px; /* Keep width and height same for a circle */
+  background-color: var(--dark-gray); /* Dark grey color for the toggle circle */
+  border-radius: 9999px; /* Makes it round */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for moving */
 }
 
 

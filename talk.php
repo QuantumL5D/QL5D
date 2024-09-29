@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>quantumL5D Messages</title>
+    <script>document.documentElement.className += localStorage.getItem('theme') === 'light' ? ' light' : '';</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -13,7 +14,13 @@
     <link rel="icon" href="img/browserTabImg.svg" type="image/x-icon">
 </head>
 <body>
-<body class="background-gradient min-h-screen">
+<body class="background-gradient min-h-screen relative">
+<div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
     <div class="min-h-screen flex flex-col justify-between">
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
@@ -27,8 +34,8 @@
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
                     <li class="!mx-0"><a href="index.html" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li>
-                    <li class="!mx-0"><a href="payments.html" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
+                    <!-- <li class="!mx-0"><a href="#" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li> -->
+                    <li class="!mx-0"><a href="contribute.html" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,17 +59,16 @@
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
                     <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
-                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li>
-                    <li><a href="payments.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
+                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
+                    <li><a href="contribute.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
     </div>
    <div id ="contactForm" class="h-full relative z-20 mt-14 sm:mt-0 mb-10 lg:mb-30">
         <div class="max-w-screen-xl mx-auto xl:py-10 lg:px-6 lg:py-7 px-3 py-3 relative">
-        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full dark-gray mx-auto">Ask About Your Messages</h1>
+        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full dark-gray mx-auto">Ask About Your Message</h1>
         <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 w-10/12 mx-auto text-center neg-letter">ask me anything</h2>
-        <button id="theme-toggle">Switch Theme</button>
 
     <form action="send_email.php" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
         <div class="flex lg:gap-4 w-full">

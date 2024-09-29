@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.className += localStorage.getItem('theme') === 'light' ? ' light' : '';</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,9 +12,17 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/x-icon">
-    <title>quantumL5D Home</title>
+    <title>quantumL5D</title>
 </head>
-<body class="background-gradient">
+<body class="background-gradient relative">
+    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
+    
+    
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
@@ -22,12 +31,12 @@
             class="mx-auto w-3/4 pb-10 h-3/5 fixed top-0 bg-dark-gray z-30 mobile-position mobile-radius flex gap-10 flex-col"
             x-bind:style="{ top: open ? '0%' : '-100%' }"
             style="transition: top 0.5s;">
-            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" ><a href="#hero">quantum{L5D}</a></div>
+            <div class="text-5xl handjet-500 text-center dark-gray mt-10" ><a href="#hero">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
-                    <li class="!mx-0"><a href="talk.php" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Ask About My Messages</a></li>
-                    <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li>
-                    <li class="!mx-0"><a href="payments.html" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
+                    <li class="!mx-0"><a href="talk.php" class="mx-0 curser-pointer hover:opacity-80 light-button-border dark-gray p-3">Ask About My Message</a></li>
+                    <!-- <li class="!mx-0"><a href="#" class="mx-0 curser-pointer hover:opacity-80 light-button-border dark-gray p-3">Learn</a></li> -->
+                    <li class="!mx-0"><a href="contribute.html" class="mx-0 curser-pointer hover:opacity-80 dark-gray light-button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
@@ -50,9 +59,9 @@
             <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="#hero">quantum{L5D}</a></div>
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="talk.php" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Ask About My Messages</a></li>
-                    <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li>
-                    <li><a href="payments.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
+                    <li><a href="talk.php" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Ask About My Message</a></li>
+                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
+                    <li><a href="contribute.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
@@ -72,9 +81,10 @@
                 </div>
                 <div class="flex justify-end space-x-4 xl:mt-12 md:mt-6 sm:mt-4 mt-2 2xl:text-3xl lg:text-2xl sm:text-xl text-lg">
                     <div class="flex flex-col gap-4 sm:flex-row">
-                    <a href="talk.php" class="handjet-700 hover:opacity-80 dark-gray text-center p-3 md:p-6 button-border">Ask About My Messages</a>
-                    <a href="#" class="handjet-700 hover:opacity-80 dark-gray p-3 text-center md:p-6 button-border">Learn More About This Topic</a>
-                    <button id="theme-toggle">Switch Theme</button>
+                    <a href="talk.php" class="handjet-700 hover:opacity-80 dark-gray text-center p-3 md:p-6 button-border">Ask About My Message</a>
+                    <!-- <a href="#" class="handjet-700 hover:opacity-80 dark-gray p-3 text-center md:p-6 button-border">Learn More About This Topic</a> -->
+                  
+                    
                 </div>
                 </div>
             </main>
@@ -118,7 +128,7 @@
                     <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">In September 2023, I encountered a setback—a traumatic event that spiritually reset me to square one. Trauma has a way of sealing our heart centers, shifting our energy towards negativity. Reopening the heart and realigning with positivity is no small feat. Since that September, I've been on a path of recovery, only now beginning to emerge from the shadows. This ordeal was my dark night of the soul; at my peak, I had grown complacent, content with the knowledge I held, ceasing to seek further wisdom—a critical error. We must always pursue learning. The challenge pushed me to acquire new healing tools, starting with self-healing. A dark night of the soul serves to propel us into uncomfortable territories, where true growth occurs. For much of the past year, I've been mired in negativity, but now, I'm poised to progress. Through this ordeal, I've gained profound insights, discovered my true self, and recognized my capabilities—insights that are unshakable.</p>
                     <p class="!leading-relaxed mx-auto !font-bold 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">This brings me to today. Sitting here typing my story for you all to read. I have a deep desire to help people and share my experiences. It is in my soul. </p>
                     <h2 class="2xl:text-6xl lg:text-5xl text-4xl !font-bold text-dark-gray-60 playfair-display-500 neg-letter">My Abilities</h2>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">My most profound ability is communicating with the higher self, or soul, a skill honed through my encounters with 'walk-ins'. (A walk-in happens when one's current soul is switched for another from their soul star.) I've undergone this transformation multiple times, with my first in 2015. Walk-ins typically occur post near-death experiences or when one's internal vibration significantly increases, surpassing the body's current frequency. Our soul aligns with our vibration, whether it's high or low. A soul vibrating at a high frequency can't sustain in a lower frequency body, hence, a matching soul is provided. Soul replacements are more common than we realize; I estimate around 80% of people have experienced this phenomenon, likely more than once.</p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">My most profound ability is communicating with the higher self, or soul, a skill honed through encounters with my many 'walk-ins'. (A walk-in happens when one's current soul is switched for another from their soul star.) I've undergone this transformation multiple times, with my first in 2015. Walk-ins typically occur post near-death experiences or when one's internal vibration significantly increases, surpassing the body's current frequency. Our soul aligns with our vibration, whether it's high or low. A soul vibrating at a high frequency can't sustain in a lower frequency body, hence, a matching soul is provided. Soul replacements are more common than we realize; I estimate around 80% of people have experienced this phenomenon, likely more than once.</p>
                     <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Your higher self is privy to every detail about you, holding your deepest secrets without a shred of judgment. They embody pure love and comprehension, serving as your eternal supporter, encouraging you never to surrender. My capacity to connect with YOUR higher self unlocks your path to healing. Together, with my skills and your higher self's guidance, your journey towards recovery is within reach. It's the moment to welcome this transformative voyage.</p>
                     </div>
                 </div>
@@ -134,71 +144,62 @@
             <p class="2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray lora-400">I communicate with your higher self to convey messages or ask questions on your behalf, focusing on self-insight. Before healing, I, with the aid of my guides, remove any external negative energies as part of the process.</p>
             <p class="2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray lora-400">This is a list of services and healing I can provide additional:</p>
             <ul class="li work-sans-500 2xl:text-xl lg:text-lg text-sm">
-                <div class="flex items-center flex-wrap">
-                    <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Chakra Clearing and Activation:</li>
+                <div class="flex flex-col items-start justify-start">
+                    <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Chakra Clearing and Activation</li>
                     <ul>
                         <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Use energy form source and Gaia to cdlear and activate your Chakras.</li>
                     </ul>
                 </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Curses and black magic removal:</li>
+                <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Curses and black magic removal</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Eliminate black magic and negative energy influences from others</li>
                 </ul>
             </div>
-            <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl dark-gray sm:text-lg text-base sm:text-lg">Connection with Pets:</li>
+            <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Connection with Pets</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Connect with the higher selves of your pets to receive their messages and provide healing</li>
                 </ul>
             </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg text-base dark-gray sm:text-lg">Energy Cleansing in Various Aspects of Life:</li>
+                <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Energy Cleansing in Various Aspects of Life</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 w-full break-words">Purify negative energy from your bank accounts, homes, cars, workplace, business, and educational environments</li>
                 </ul>
             </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Personal Guidance:</li>
+                <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Personal Guidance</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Engage in discussions about your issues, offering solutions guided by your higher self</li>
                 </ul>
             </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Spiritual Guides:</li>
-                <ul>
-                    <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Introduce you to your spiritual guides and teach you how to collaborate with them</li>
-                </ul>
-            </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Self-Clearing Techniques:</li>
+                <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Self-Clearing Techniques</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Instruct on methods to cleanse yourself of negative energy through meditation and guidance from your spiritual guides</li>
                 </ul>
             </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Call Forward Certain Beings:</li>
+                <!-- <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Call Forward Certain Beings:</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Facilitate communication with specific spiritual beings for questioning, if desired</li>
                 </ul>
-            </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Healing Through Higher Self:</li>
+            </div> -->
+                <div class="flex flex-col items-start justify-start">
+                <li class="opacity-90 2xl:text-3xl sm:text-2xl lg:text-2xl dark-gray text-xl">Healing Through Higher Self</li>
                 <ul>
                     <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Consult your higher self to identify and heal any trauma you might have</li>
-                </ul>
-            </div>
-                <div class="flex items-center flex-wrap">
-                <li class="opacity-90 2xl:2xl:text-xl sm:text-lg dark-gray text-base sm:text-lg">Direct Trauma Healing:</li>
-                <ul>
-                    <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400">Offer healing for any specified trauma you wish to address</li>
                 </ul>
             </div>
             </ul>
        
             <p class="2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Message me with your thoughts. I'll respond promptly. I'm non-judgmental, as you'll see in our conversation. My work is intensive and requires preparation. I'll ask questions to understand your issues better. After our session, I check in to assess progress and refine my approach. I'm open to maintaining extended connections with those I help, committed to their ongoing improvement.</p>
             <p class="2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Be genuine with me; honesty about yourself and your intentions is crucial. Healing requires authenticity. THE ONLY WAY TO HEAL YOURSELF IS BY BEING YOURSELF. Your higher self is aware of all your truths and will reveal what needs healing through images or messages if they feel you have missed something. I emphasize AUTHENTICITY.</p>
-            <p class="2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Once I receive your questions, you're added to a queue. I work on these at my convenience, without a fixed schedule. After completing yours, I'll notify you and send a video via email with a Google Drive link. You can download the video anytime; the link won't expire."</p>
+            <p class="2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Once I receive your questions, you're added to a queue. I work on these at my convenience, without a fixed schedule. After completing yours, I'll notify you and send a video via email with a Google Drive link. You can download the video anytime; the link won't expire.</p>
+            <p class="2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Upon completing the healing you've requested, I will reach out via email with your personalized healing video, accessible through a Google Drive link that you can download at your convenience.
+
+            </p>
         </div>
         </div>
         </div>
