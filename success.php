@@ -71,9 +71,9 @@
    
       <div>
         <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark text-centerd mb-4 text-center dark-gray playfair-display-500">Thank you!</h1>
-        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray opacity-90 text-center mb-6 lora-400 ">Your message has been sent successfully. We will get back to you soon.</p>
+        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray  text-center mb-6 lora-400 ">Your message has been sent successfully. We will get back to you soon.</p>
         </div>
-        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover:opacity-90 p-3 dark-gray">Go Back to Home</a>
+        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover: p-3 dark-gray">Go Back to Home</a>
       
       
         </div>
@@ -82,7 +82,7 @@
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
         
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base ">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
             <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
                <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
               <a href="mailto:QuantumLyndsey5D.com">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>

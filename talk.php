@@ -72,17 +72,17 @@
 
     <form action="send_email.php" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
         <div class="flex lg:gap-4 w-full">
-        <label class="flex w-1/2 flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed mr-1 dark-gray opacity-90 lora-400">First Name
+        <label class="flex w-1/2 flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed mr-1 dark-gray  lora-400">First Name
         <input type="text" required name="fname" class="p-2 feature-border">
         </label>
-        <label class="w-1/2 flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">Last Name
+        <label class="w-1/2 flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  lora-400">Last Name
             <input type="text" required name="lname" class="feature-border p-2">
         </label>
         </div>
-        <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray opacity-90 mb-8 lora-400">Your Email Address
+        <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  mb-8 lora-400">Your Email Address
         <input type="email" required name="email" class="p-2 feature-border">
         </label>
-        <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray opacity-90 mb-8 lora-400">Your Message
+        <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  mb-8 lora-400">Your Message
         <textarea spellcheck="true" name="message" required class="p-2 feature-border h-80"></textarea>
         </label>
         <div class="flex justify-end">
@@ -95,7 +95,7 @@
     <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
         
         <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+            <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base ">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
             <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
                <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
               <a href="mailto:QuantumLyndsey5D.com">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
