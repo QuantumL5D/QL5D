@@ -5,22 +5,64 @@ body {
     padding: 0;
 }
 
+/* Default to dark theme */
 :root {
-    /* Base colors */
-    --dark-gray: #2F2F2F;
-    /* Equivalent to Tailwind's closest color */
+  --dark-gray: #E0E0E0; 
+  --in-between: #a5a5a580;
+  --contrast: #2f2f2f;
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+  --backgroundImage: url('img/bgImageDark.png');
+}
 
-    /* Opacity variations */
-    --opacity-40: 0.4;
-    --opacity-60: 0.6;
+/* Override for light theme */
+.light {
+  --dark-gray: #2F2F2F;
+  --in-between: #2F2F2F90;
+  --contrast: #e0e0e0;
+  --opacity-40: 0.4;
+  --opacity-60: 0.6;
+  --backgroundImage: url('img/bgImageLight.png');
+}
 
-    /* Gradient colors */
-    --gradient-start: #FFFEFA;
-    /* Lighter gray */
-    --gradient-middle: #FFF9E3;
-    /* Mid gray */
-    --gradient-end: #fcedd3;
-    /* White */
+.in-between-bc {
+  border-color: var(--in-between);
+}
+
+/* Apply a transition to all elements or specific ones */
+html, body, div, span { /* Add other tags as necessary */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text colors */
+}
+
+
+.toggle-padding {
+  padding: 2px; /* Padding around the toggle */
+  display: inline-block; /* Keeps dimensions correct for padding */
+  position: relative;
+  width: 42px; /* Adjust width as needed */
+  height: 24px; /* Adjust height as needed */
+  background-color: var(--contrast); /* Light grey background */
+  border: 3px solid var(--in-between); /* In-between grey border */
+  border-radius: 9999px; /* Fully rounded ends */
+}
+.toggle-circle {
+  position: absolute;
+  top: 0; /* 2px from the top of the parent container */
+  left: 0; /* Starts 2px from the left, will translate to right */
+  width: 18px; /* Adjust size of the circle */
+  height: 18px; /* Keep width and height same for a circle */
+  background-color: var(--dark-gray); /* Dark grey color for the toggle circle */
+  border-radius: 9999px; /* Makes it round */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for moving */
+}
+
+
+.background-gradient {
+background-image: var(--backgroundImage);
+background-size: cover;
+  background-position: center; 
+
+
 }
 
 html {
@@ -77,19 +119,15 @@ font-style: normal;
   font-style: normal;
 }
 
-.background-gradient {
-  background: linear-gradient(to bottom, var(--gradient-start), var(--gradient-middle), var(--gradient-end));
 
-  height: 100%;
-}
 
 .text-dark-gray-40 {
-  color: var(--dark-gray);
+  color: var(--contrast);
   opacity: var(--opacity-40);
 }
 
 .bg-dark-gray {
-  background-color: var(--dark-gray);
+  background-color: var(--contrast);
 }
 
 .text-dark-gray-60 {
@@ -130,7 +168,7 @@ font-style: normal;
   border-radius: 50%;
 }
 .light-button-border {
-  border: 2px solid var(--gradient-middle);
+  border: 2px solid var(--dark-gray);
   border-radius: 50%;
 }
 .feature-border {
@@ -236,7 +274,7 @@ gap: 20%;
   .nav-icon-1 span{
     width: 5px;
     height: 5px;
-    background-color: #2f2f2f;
+    background-color: var(--dark-gray);
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -244,7 +282,7 @@ gap: 20%;
   }
 
   .nav-icon-1 .open {
-    background-color: var(--gradient-middle);
+    background-color: var(--dark-gray);
   }
   .nav-icon-1:hover span{
     transform: scale(1.2);

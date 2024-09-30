@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>document.documentElement.className += localStorage.getItem('theme') === 'light' ? ' light' : '';</script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,9 +12,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/svg+xml">
-    <title>quantumL5D Home</title>
+    <title>quantumL5D Contribute</title>
 </head>
-<body class="background-gradient">
+<body class="background-gradient relative">
+    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
@@ -54,52 +61,43 @@
         </header>
     </div>
     <div id="hero" class="h-full relative mt-14 sm:mt-0 mb-10 lg:mb-40">
-        <div class="w-screen">
-            <div class="w-screen absolute top-0 left-0">
-            <img src="img/heroSun.svg" alt="Sun Background" class="object-cover w-screen h-full opacity-90">
-        </div>
         <div class="max-w-screen-xl mx-auto xl:py-10 px-6 py-6 relative">
                 <div class="flex flex-col">
-                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10">Contributions</h1>
+                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10 dark-gray">Contributions</h1>
                     <div class="flex flex-col gap-3">
                     <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 neg-letter">I accpet the following methods for contributing</h2>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">Thank you for your contribution towards my efforts in helping you discover yourself with the help of your High Self. Your contribution not only supports this sacred work but also signifies your commitment to your personal growth and healing. </p>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">I am genuinely honored to facilitate this transformative process for you, and your trust in this healing fills me with gratitude. Your support helps me continue this calling, providing healing and insights through spiritual connectivity. </p>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">Please remember, your journey towards healing is unique, and I am here to guide you with utmost sincerity and dedication. </p>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">With your contribution, I will begin preparing for the healing, ensuring it's tailored to meet your spiritual needs. Upon completing the healing you've requested, I will reach out via email with your personalized healing video, accessible through a Google Drive link that you can download at your convenience. </p>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray opacity-90 lora-400">Thank you once again for choosing this path of self-discovery and healing. Your authenticity and openness are the keys to unlocking profound transformation.</p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray  lora-400">Thank you for your contribution towards my efforts in helping you discover yourself with the help of your High Self. Your contribution not only supports this sacred work but also signifies your commitment to your personal growth and healing. </p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray  lora-400">I am genuinely honored to facilitate this transformative process for you, and your trust in this healing fills me with gratitude. Your support helps me continue this calling, providing healing and insights through spiritual connectivity. </p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray  lora-400">Please remember, your journey towards healing is unique, and I am here to guide you with utmost sincerity and dedication. </p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray  lora-400">With your contribution, I will begin preparing for the healing, ensuring it's tailored to meet your spiritual needs. Upon completing the healing you've requested, I will reach out via email with your personalized healing video, accessible through a Google Drive link that you can download at your convenience. </p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray  lora-400">Thank you once again for choosing this path of self-discovery and healing. Your authenticity and openness are the keys to unlocking profound transformation.</p>
                 </div>
                 </div>
                     <ul class="li work-sans-500 2xl:text-xl mt-10 lg:text-lg text-sm">
                         <div class="flex items-center flex-wrap">
-                            <li class="opacity-90">PayPal</li>
+                            <li class=" dark-gray">PayPal</li>
                             <ul>
-                                <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 opacity-90">QuantumLyndsey5D@gmail.com</li>
+                                <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 ">QuantumLyndsey5D@gmail.com</li>
                             </ul>
                         </div>
                         <div class="flex items-center flex-wrap">
-                        <li class="opacity-90">Cash App</li>
+                        <li class=" dark-gray">Cash App</li>
                         <ul>
-                            <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 opacity-90">$<span class="uppercase">QL5D</span></li>
+                            <li class="lc 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base dark-gray lora-400 ">$<span class="uppercase">QL5D</span></li>
                         </ul>
                     </div>
                     </ul>
         </div>
-        </div>
     </div>
 
     <div id="footer" class="relative">
-        <div class="absolute z-1 bottom-0 left-0 ">
-            <img src="img/sunStar1.svg" alt="Sun Background" class="h-52 top-20 opacity-20">
-    </div>
         <div class="flex justify-between h-full gap-2 flex-col max-w-screen-2xl mx-auto p-7">
             
             <div class="text-3xl font-bold dark-gray handjet-700">quantum{L5D}</div>
-                <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base opacity-90">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
+                <p class="lora-400 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg dark-gray text-base ">I am a developer. This website was created from scratch by me. I hope you enjoyed the experience it offered. <span class="lora-700">-Lyndsey</span></p>
                 <div x-data class="w-full mt-4 flex-wrap flex gap-6 sm:gap-12 items-center justify-end mb-4">
                    <a href="https://www.facebook.com/groups/980791636977750"  target="blank"> <img src="img/facebook.svg" class="w-6 md:w-8 md:h-8" alt="Facebook" /></a>
                   <a href="mailto:QuantumLyndsey5D.com">  <img src="img/gmail.png" class="w-6 md:w-8 md:h-8" alt="Gmail"/></a>
-                   <a href="https://x.com/QuantmLyndsey5D"  target="blank"> <img src="img/twitter.png" class="w-6 md:w-8 md:h-8" alt="Twitter"/></a>
                   <a href="https://www.tiktok.com/@nocturnalrainbows823"  target="blank">  <img src="img/tiktok.png"  class="w-6 md:w-8 md:h-8" alt="TikTok"/></a>
                   </div>
                   
@@ -120,5 +118,6 @@ function initTouchDetection() {
 }
 
 </script>
+<script src="colorThemeToggle.js"></script>
 </body>
 </html>
