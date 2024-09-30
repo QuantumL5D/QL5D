@@ -34,6 +34,10 @@ html, body, div, span { /* Add other tags as necessary */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text colors */
 }
 
+.contrast {
+  color: #2f2f2f;
+}
+
 
 .toggle-padding {
   padding: 2px; /* Padding around the toggle */

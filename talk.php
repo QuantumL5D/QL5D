@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/x-icon">
 </head>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2TEBVJ3RTF');
+</script>
 <body>
 <body class="background-gradient min-h-screen relative">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
@@ -68,25 +75,24 @@
    <div id ="contactForm" class="h-full relative z-20 mt-14 sm:mt-0 mb-10 lg:mb-30">
         <div class="max-w-screen-xl mx-auto xl:py-10 lg:px-6 lg:py-7 px-3 py-3 relative">
         <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full dark-gray mx-auto">Ask About Your Message</h1>
-        <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold text-dark-gray-60 mb-4 playfair-display-500 w-10/12 mx-auto text-center neg-letter">ask me anything</h2>
 
-    <form action="send_email.php" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
+    <form action="https://formspree.io/f/mrbznoyq" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
         <div class="flex lg:gap-4 w-full">
         <label class="flex w-1/2 flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed mr-1 dark-gray  lora-400">First Name
-        <input type="text" required name="fname" class="p-2 feature-border">
+        <input type="text" required name="fname" class="p-2 contrast feature-border">
         </label>
         <label class="w-1/2 flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  lora-400">Last Name
-            <input type="text" required name="lname" class="feature-border p-2">
+            <input type="text" required name="lname" class="contrast feature-border p-2">
         </label>
         </div>
         <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  mb-8 lora-400">Your Email Address
-        <input type="email" required name="email" class="p-2 feature-border">
+        <input type="email" required name="email" class="contrast p-2 feature-border">
         </label>
         <label class="flex flex-col flex flex-col 2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray  mb-8 lora-400">Your Message
-        <textarea spellcheck="true" name="message" required class="p-2 feature-border h-80"></textarea>
+        <textarea spellcheck="true" name="message" required class="contrast p-2 feature-border h-80"></textarea>
         </label>
         <div class="flex justify-end">
-        <button type="submit" class="dark-gray button-border handjet-700 2xl:text-3xl lg:text-xl hover:opacity-80 sm:text-lg text-base p-3">Send</button>
+        <button type="submit" class="button-border handjet-700 2xl:text-3xl lg:text-xl hover:opacity-80 sm:text-lg text-base p-3">Send</button>
         </div>
     </form>
         </div>
