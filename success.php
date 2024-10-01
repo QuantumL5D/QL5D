@@ -41,16 +41,16 @@
             :class="{ 'hidden': !open }"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
         style="transition: transform 0.5s; transform: translateY(-100%);">
-            <div class="text-5xl middle-light-color handjet-500 text-center mt-10" ><a href="index.html">quantum{L5D}</a></div>
+            <div class="text-5xl middle-light-color handjet-500 text-center font-bold mt-10" ><a href="index.html">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
-                    <li class="!mx-0"><a href="index.html" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
+                    <li class="!mx-0"><a href="index.html" class="mx-0 middle-light-color font-bold curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
                     <!-- <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li> -->
-                    <li class="!mx-0"><a href="contribute.html" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
+                    <li class="!mx-0"><a href="contribute.html" class="mx-0 middle-light-color curser-pointer font-bold hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="fixed top-3 left-3 text-3xl handjet-500 dark-gray" ><a href="index.html">quantum{L5D}</a></div>
+        <div class="fixed top-3 left-3 text-3xl font-bold handjet-500 dark-gray font-bold" ><a href="index.html">quantum{L5D}</a></div>
         <div class="fixed z-30 right-3 top-3">
             <div class="icon z-30 nav-icon-1" @click="open = !open; console.log('open now is:', open)">
                 <span x-bind:class="{ 'open': open }"></span>
