@@ -7,12 +7,13 @@ body {
 
 /* Default to dark theme */
 :root {
-  --dark-gray: #E0E0E0; 
+  --dark-gray: #e0e0e0; 
   --in-between: #a5a5a580;
   --contrast: #2f2f2f;
   --opacity-40: 0.4;
   --opacity-60: 0.6;
-  --backgroundImage: url('img/bgImageDark.png');
+  /* --backgroundImage: url('img/bgImageDark.png'); */
+  --body: #101115;
 }
 
 /* Override for light theme */
@@ -22,11 +23,40 @@ body {
   --contrast: #e0e0e0;
   --opacity-40: 0.4;
   --opacity-60: 0.6;
-  --backgroundImage: url('img/bgImageLight.png');
+  /* --backgroundImage: url('img/test.png'); */
+  --body: #EFEEEA ;
 }
 
 .in-between-bc {
   border-color: var(--in-between);
+}
+
+.bg-theme-color {
+  background-color: var(--contrast);
+}
+
+.background-gradient {
+  background-color: var(--body);
+}
+
+.logo-text a {
+  color: #e0e0e0;
+}
+
+.outlined-text {
+  text-shadow: 
+      -1px -1px 7px var(--contrast),  
+       1px -1px 7px var(--contrast),
+      -1px  1px 7px var(--contrast),
+       1px  1px 7px var(--contrast); /* Outline effect using black color */
+}
+
+.outlined-text-dark {
+  text-shadow: 
+      -1px -1px 7px #2f2f2f,  
+       1px -1px 7px #2f2f2f,
+      -1px  1px 7px #2f2f2f,
+       1px  1px 7px #2f2f2f; /* Outline effect using black color */
 }
 
 /* Apply a transition to all elements or specific ones */
@@ -37,7 +67,6 @@ html, body, div, span { /* Add other tags as necessary */
 .contrast {
   color: #2f2f2f;
 }
-
 .toggle-padding {
   padding: 2px; /* Padding around the toggle */
   display: inline-block; /* Keeps dimensions correct for padding */
@@ -61,9 +90,7 @@ html, body, div, span { /* Add other tags as necessary */
 
 
 .background-gradient {
-background-image: var(--backgroundImage);
-background-size: cover;
-  background-position: center; 
+
 
 
 }
