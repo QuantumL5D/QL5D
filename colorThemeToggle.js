@@ -7,9 +7,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         if (!localStorage.getItem('theme')) {
             localStorage.setItem('theme', theme);
         }
-    }, 1); // Small delay to allow page to render completely
-
-    // Save the default theme to localStorage if it was not previously set
+    }, 1);
     if (!localStorage.getItem('theme')) {
         localStorage.setItem('theme', theme);
         console.log('Setting initial theme to dark and saving to localStorage');
