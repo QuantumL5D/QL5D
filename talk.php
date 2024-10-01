@@ -12,14 +12,15 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/x-icon">
-</head>
-<script>
+    <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-2TEBVJ3RTF');
 </script>
+</head>
+
 <body>
 <body class="background-gradient min-h-screen relative">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
@@ -92,7 +93,7 @@
         <textarea spellcheck="true" name="message" required class="contrast p-2 feature-border h-80"></textarea>
         </label>
         <div class="flex justify-end">
-        <button type="submit" class="button-border handjet-700 2xl:text-3xl lg:text-xl hover:opacity-80 sm:text-lg text-base p-3">Send</button>
+        <button type="submit" class="button-border dark-gray handjet-700 2xl:text-3xl lg:text-xl hover:opacity-80 sm:text-lg text-base p-3">Send</button>
         </div>
     </form>
         </div>
