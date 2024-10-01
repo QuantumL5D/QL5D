@@ -47,6 +47,7 @@
                 </ul>
             </nav>
         </header>
+        <div class="fixed top-3 left-3 text-3xl handjet-500 dark-gray" ><a href="index.html">quantum{L5D}</a></div>
         <div class="fixed z-30 right-3 top-3">
             <div class="icon z-30 nav-icon-1" @click="open = !open; console.log('open now is:', open)">
                 <span x-bind:class="{ 'open': open }"></span>
