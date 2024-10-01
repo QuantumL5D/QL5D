@@ -13,7 +13,15 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2TEBVJ3RTF');
+</script>
 </head>
+
 <body class="background-gradient relative">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
@@ -71,7 +79,7 @@
    
       <div>
         <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark text-centerd mb-4 text-center dark-gray playfair-display-500">Thank you!</h1>
-        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray  text-center mb-6 lora-400 ">Your message has been sent successfully. We will get back to you soon.</p>
+        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray  text-center mb-6 lora-400 ">Your message has been sent successfully. I will get back to you soon.</p>
         </div>
         <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover: p-3 dark-gray">Go Back to Home</a>
       
