@@ -21,8 +21,9 @@
         gtag('config', 'G-2TEBVJ3RTF');
       </script>
 </head>
-<body class="background-gradient relative">
-    <img src="img/flower.png" alt="Flower Background" class="absolute top-0 left-0 object-contain w-screen opacity-90">
+<body class="relative">
+<div class="background-gradient">
+    <!-- <img src="img/flower.png" alt="Flower Background" class="absolute top-0 left-0 object-contain w-screen opacity-90"> -->
     <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
             <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
@@ -50,7 +51,7 @@
                 </ul>
             </nav>
         </header>
-        <div class="fixed z-20 top-3 left-3 text-3xl font-bold handjet-500 dark-gray" ><a href="#hero">quantum{L5D}</a></div>
+        <div class="fixed z-20 top-3 left-3 text-3xl font-bold handjet-500 dark-gray" ><a class="font-bold" href="#hero">quantum{L5D}</a></div>
         <div class="fixed z-30 right-3 top-3">
             <div class="icon z-30 nav-icon-1" @click="open = !open; console.log('open now is:', open)">
                 <span x-bind:class="{ 'open': open }"></span>
@@ -86,7 +87,7 @@
                 </div>
                 <div class="flex sm:items-center flex-col">
                 <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold outlined-text tracking-tighter dark-gray mb-4 playfair-display-500 md:neg-letter">What is your higher self?</h2>
-                <p class="outlines-text font-bold 2xl:2xl:text-xl sm:text-lg text-base sm:text-center sm:text-lg text-base leading-relaxed dark-gray mb-8 lora-400 outlined-text w-11/12 sm:w-2/3 lg:w-1/2">It is your soul and your subconscious. If
+                <p class="all-dark-text contrast-outlined-text font-bold 2xl:2xl:text-xl sm:text-lg text-base sm:text-center sm:text-lg text-base leading-relaxed mb-8 lora-400 w-11/12 sm:w-2/3 lg:w-1/2">It is your soul and your subconscious. If
                     you find yourself here, reading these words now, chances are, it was your higher self is who guided you
                     here - <span class="font-bold">It is time to heal.</span></p>
                 </div>
