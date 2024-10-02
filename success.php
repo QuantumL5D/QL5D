@@ -21,8 +21,20 @@
   gtag('config', 'G-2TEBVJ3RTF');
 </script>
 </head>
-
-<body class="background-gradient relative">
+<body class="relative"> 
+   <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
+        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
+            <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
+            <nav>
+                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
+                    <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3 bg-theme-color">Home</a></li>
+                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
+                    <li><a href="contribute.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3 bg-theme-color">Make a Contribution</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div class="background-gradient relative">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
             <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
@@ -41,12 +53,12 @@
             :class="{ 'hidden': !open }"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
         style="transition: transform 0.5s; transform: translateY(-100%);">
-            <div class="text-5xl middle-light-color handjet-500 text-center font-bold mt-10" ><a href="index.html">quantum{L5D}</a></div>
+            <div class="text-5xl handjet-500 text-center font-bold mt-10 dark-gray" ><a href="index.html">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
-                    <li class="!mx-0"><a href="index.html" class="mx-0 middle-light-color font-bold curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
-                    <!-- <li class="!mx-0"><a href="#" class="mx-0 middle-light-color curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li> -->
-                    <li class="!mx-0"><a href="contribute.html" class="mx-0 middle-light-color curser-pointer font-bold hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
+                    <li class="!mx-0"><a href="index.html" class="dark-gray mx-0 font-bold curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
+                    <!-- <li class="!mx-0"><a href="#" class="mx-0 curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li> -->
+                    <li class="!mx-0"><a href="contribute.html" class="dark-gray mx-0 curser-pointer font-bold hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
                 </ul>
             </nav>
         </header>
@@ -65,26 +77,15 @@
               </div>
         </div>
     </div>
-    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
-        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
-            <nav>
-                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
-                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
-                    <li><a href="contribute.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div class="relative flex flex-col justify-center items-center">
+   
+    <div class="relative flex flex-col mt-10 md:mt-40 justify-center items-center">
      
    
       <div>
-        <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark text-centerd mb-4 text-center dark-gray playfair-display-500">Thank you!</h1>
-        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray  text-center mb-6 lora-400 ">Your message has been sent successfully. I will get back to you soon.</p>
+        <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark text-centerd mb-4 text-center dark-gray playfair-display-500 contrast-variable outlined-text">Thank you!</h1>
+        <p class="2xl:2xl:text-xl px-3 sm:text-lg text-base sm:text-lg w-2/3 mx-auto leading-relaxed dark-gray  text-center mb-6 lora-400 contrast-variable outlined-text font-bold">Your message has been sent successfully. I will get back to you soon.</p>
         </div>
-        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover: p-3 dark-gray">Go Back to Home</a>
+        <a href="index.html" class="button-border handjet-700 2xl:text-3xl lg:text-2xl sm:text-xl text-base hover: p-3 dark-gray contrast-variable outlined-text bg-theme-color">Go Back to Home</a>
       
       
         </div>
@@ -122,5 +123,6 @@ icons.forEach (icon => {
 
 </script>
 <script src="colorThemeToggle.js"></script>
+</div>
 </body>
 </html>
