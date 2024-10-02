@@ -22,6 +22,18 @@
       </script>
 </head>
 <body class="relative">
+    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
+        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
+            <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="#hero">quantum{L5D}</a></div>
+            <nav>
+                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
+                    <li><a href="talk.php" class="font-bold dark-gray curser-pointer hover:opacity-80 bg-theme-color button-border p-3">Ask About My Message</a></li>
+                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
+                    <li><a href="contribute.html" class="dark-gray font-bold curser-pointer bg-theme-color hover:opacity-80 button-border p-3">Make a Contribution</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 <div class="background-gradient">
     <!-- <img src="img/flower.png" alt="Flower Background" class="absolute top-0 left-0 object-contain w-screen opacity-90"> -->
     <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
@@ -65,18 +77,6 @@
                 <span x-bind:class="{ 'open': open }"></span>
               </div>
         </div>
-    </div>
-    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
-        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="#hero">quantum{L5D}</a></div>
-            <nav>
-                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="talk.php" class="font-bold dark-gray curser-pointer hover:opacity-80 bg-theme-color button-border p-3">Ask About My Message</a></li>
-                    <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
-                    <li><a href="contribute.html" class="dark-gray font-bold curser-pointer bg-theme-color hover:opacity-80 button-border p-3">Make a Contribution</a></li>
-                </ul>
-            </nav>
-        </header>
     </div>
     <div id="hero" class="min-h-screen relative mt-14 sm:mt-0 mb-10 lg:mb-40">
         <div class="lg:max-w-screen-xl max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 pt-7 relative">

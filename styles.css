@@ -1,99 +1,100 @@
 body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 /* Default to dark theme */
 :root {
-  --dark-gray: #e0e0e0; 
-  --in-between: #a5a5a580;
-  --contrast: #2f2f2f;
-  --opacity-40: 0.4;
-  --opacity-60: 0.6;
-  /* --backgroundImage: url('img/bgImageDark.png'); */
-  --body: #101115;
-  
-  --bg-image: url('img/flower.png');
+--dark-gray: #e0e0e0; 
+--in-between: #a5a5a580;
+--contrast: #2f2f2f;
+--opacity-40: 0.4;
+--opacity-60: 0.6;
+/* --backgroundImage: url('img/bgImageDark.png'); */
+--body: #101115;
+
+--bg-image: url('img/flower.png');
 }
 
 /* Override for light theme */
 .light {
-  --dark-gray: #2f2f2f;
-  --in-between: #2f2f2f90;
-  --contrast: #e0e0e0;
-  --opacity-40: 0.4;
-  --opacity-60: 0.6;
-  /* --backgroundImage: url('img/test.png'); */
-  --body: #EFEEEA ;
-  --bg-image: url('img/flower-light.png');
-  
+--dark-gray: #2f2f2f;
+--in-between: #2f2f2f90;
+--contrast: #e0e0e0;
+--opacity-40: 0.4;
+--opacity-60: 0.6;
+/* --backgroundImage: url('img/test.png'); */
+--body: #EFEEEA ;
+--bg-image: url('img/flower-light.png');
+
 }
 
 .in-between-bc {
-  border-color: var(--in-between);
+border-color: var(--in-between);
 }
 
 .bg-theme-color {
-  background-color: var(--contrast);
+background-color: var(--contrast);
 }
 
 .background-gradient {
-  background-color: var(--body);
-  background-image: var(--bg-image);
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 100%;
+background-color: var(--body);
+background-image: var(--bg-image);
+background-size:cover;
+background-repeat: no-repeat;
+height: 100%;
+background-position: center;
 }
 
 body {
-  background-color: var(--body);
+background-color: var(--body);
 }
 
 .logo-text a {
-  color: #e0e0e0;
+color: #e0e0e0;
 }
 
 .all-dark-text {
-  color: #2f2f2f
+color: #2f2f2f
 }
 
 .outlined-text {
-  text-shadow: 
-      -1px -1px 7px var(--contrast),  
-       1px -1px 7px var(--contrast),
-      -1px  1px 7px var(--contrast),
-       1px  1px 7px var(--contrast); /* Outline effect using black color */
+text-shadow: 
+    -1px -1px 7px var(--contrast),  
+     1px -1px 7px var(--contrast),
+    -1px  1px 7px var(--contrast),
+     1px  1px 7px var(--contrast); /* Outline effect using black color */
 }
 
 .outlined-text-contrast {
-  text-shadow: 
-      -1px -1px 7px var(--dark-gray),  
-       1px -1px 7px var(--dark-gray),
-      -1px  1px 7px var(--dark-gray),
-       1px  1px 7px var(--dark-gray); /* Outline effect using black color */
+text-shadow: 
+    -1px -1px 7px var(--dark-gray),  
+     1px -1px 7px var(--dark-gray),
+    -1px  1px 7px var(--dark-gray),
+     1px  1px 7px var(--dark-gray); /* Outline effect using black color */
 }
 
 .contrast-outlined-text {
-  text-shadow: 
-      -1px -1px 7px #e0e0e0,  
-       1px -1px 7px #e0e0e0,
-      -1px  1px 7px #e0e0e0,
-       1px  1px 7px #e0e0e0; /* Outline effect using black color */
+text-shadow: 
+    -1px -1px 7px #e0e0e0,  
+     1px -1px 7px #e0e0e0,
+    -1px  1px 7px #e0e0e0,
+     1px  1px 7px #e0e0e0; /* Outline effect using black color */
 }
 
 .outlined-text-dark {
-  text-shadow: 
-      -1px -1px 7px #2f2f2f,  
-       1px -1px 7px #2f2f2f,
-      -1px  1px 7px #2f2f2f,
-       1px  1px 7px #2f2f2f; /* Outline effect using black color */
+text-shadow: 
+    -1px -1px 7px #2f2f2f,  
+     1px -1px 7px #2f2f2f,
+    -1px  1px 7px #2f2f2f,
+     1px  1px 7px #2f2f2f; /* Outline effect using black color */
 }
 
 /* Apply a transition to all elements or specific ones */
 html, body, div, span { /* Add other tags as necessary */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text colors */
+transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text colors */
 }
 
 .contrast {

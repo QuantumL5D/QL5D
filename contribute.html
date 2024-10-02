@@ -21,7 +21,18 @@
         gtag('config', 'G-2TEBVJ3RTF');
       </script>
 </head>
-<body class="background-gradient relative">
+<body class="relative">
+    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
+        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
+            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
+            <nav>
+                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
+                    <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+<div class="background-gradient relative">
     <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
             <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
@@ -59,16 +70,6 @@
                 <span x-bind:class="{ 'open': open }"></span>
               </div>
         </div>
-    </div>
-    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
-        <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
-            <nav>
-                <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="index.html" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
-                </ul>
-            </nav>
-        </header>
     </div>
     <div id="hero" class="h-full relative mt-14 sm:mt-0 mb-10 lg:mb-40">
         <div class="max-w-screen-xl mx-auto xl:py-10 px-6 py-6 relative">
@@ -137,5 +138,6 @@ function initTouchDetection() {
 
 </script>
 <script src="colorThemeToggle.js"></script>
+</div>
 </body>
 </html>
