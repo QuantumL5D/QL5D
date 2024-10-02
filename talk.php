@@ -12,6 +12,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="img/browserTabImg.svg" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TEBVJ3RTF"></script>
     <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
