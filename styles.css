@@ -14,17 +14,21 @@ body {
   --opacity-60: 0.6;
   /* --backgroundImage: url('img/bgImageDark.png'); */
   --body: #101115;
+  
+  --bg-image: url('img/flower.png');
 }
 
 /* Override for light theme */
 .light {
-  --dark-gray: #2F2F2F;
-  --in-between: #2F2F2F90;
+  --dark-gray: #2f2f2f;
+  --in-between: #2f2f2f90;
   --contrast: #e0e0e0;
   --opacity-40: 0.4;
   --opacity-60: 0.6;
   /* --backgroundImage: url('img/test.png'); */
   --body: #EFEEEA ;
+  --bg-image: url('img/flower-light.png');
+  
 }
 
 .in-between-bc {
@@ -37,7 +41,7 @@ body {
 
 .background-gradient {
   background-color: var(--body);
-  background-image: url('img/flower.png');
+  background-image: var(--bg-image);
   background-size:cover;
   background-repeat: no-repeat;
   height: 100%;
@@ -63,12 +67,20 @@ body {
        1px  1px 7px var(--contrast); /* Outline effect using black color */
 }
 
+.outlined-text-contrast {
+  text-shadow: 
+      -1px -1px 7px var(--dark-gray),  
+       1px -1px 7px var(--dark-gray),
+      -1px  1px 7px var(--dark-gray),
+       1px  1px 7px var(--dark-gray); /* Outline effect using black color */
+}
+
 .contrast-outlined-text {
   text-shadow: 
-      -1px -1px 7px var(--#e0e0e0),  
-       1px -1px 7px var(--#e0e0e0),
-      -1px  1px 7px var(--#e0e0e0),
-       1px  1px 7px var(--#e0e0e0); /* Outline effect using black color */
+      -1px -1px 7px #e0e0e0,  
+       1px -1px 7px #e0e0e0,
+      -1px  1px 7px #e0e0e0,
+       1px  1px 7px #e0e0e0; /* Outline effect using black color */
 }
 
 .outlined-text-dark {
@@ -86,6 +98,9 @@ html, body, div, span { /* Add other tags as necessary */
 
 .contrast {
   color: #2f2f2f;
+}
+.contrast-variable {
+  color: var(--dark-gray);
 }
 .toggle-padding {
   padding: 2px; /* Padding around the toggle */
