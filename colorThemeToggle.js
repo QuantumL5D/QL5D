@@ -2,16 +2,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
 
     setTimeout(() => {
-        const theme = localStorage.getItem('theme') || 'dark';
+        const theme = localStorage.getItem('theme') || 'light';
         document.documentElement.classList.toggle('light', theme === 'light');
         if (!localStorage.getItem('theme')) {
             localStorage.setItem('theme', theme);
         }
-    }, 1); // Small delay to allow page to render completely
-
-    // Save the default theme to localStorage if it was not previously set
+    }, 1);
     if (!localStorage.getItem('theme')) {
-        localStorage.setItem('theme', theme);
+        localStorage.setItem('theme', light);
         console.log('Setting initial theme to dark and saving to localStorage');
     }
 });
