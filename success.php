@@ -22,7 +22,7 @@
 </script>
 </head>
 <body class="relative"> 
-  <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
+   <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
             <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
