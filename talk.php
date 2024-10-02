@@ -24,7 +24,7 @@
 <body class="relative">
 <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
-            <div class="text-3xl font-bold dark-gray handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
+            <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
                     <li><a href="index.html" class="bg-theme-color dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
