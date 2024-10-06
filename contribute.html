@@ -23,6 +23,14 @@
       </script>
 </head>
 <body class="relative">
+   
+<div class="background-gradient min-h-screen relative">
+    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
     <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
             <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
@@ -32,13 +40,6 @@
                 </ul>
             </nav>
         </header>
-    </div>
-<div class="background-gradient relative">
-    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
-        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
-            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
-              class="toggle-circle"></span>
-        </button>
     </div>
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
@@ -72,10 +73,10 @@
               </div>
         </div>
     </div>
-    <div id="hero" class="h-full relative mt-14 sm:mt-0 mb-10 lg:mb-40">
+    <div id="contribute" class="h-full relative sm:mt-0 mb-10 lg:mb-40">
         <div class="max-w-screen-xl mx-auto xl:py-10 px-6 py-6 relative">
                 <div class="flex flex-col">
-                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10 contrast-variable outlined-text">Contributions</h1>
+                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl font-semibold text-dark playfair-display-500 more-neg-letter inline-blockm lg:mb-10 contrast-variable md:mt-0 mt-28 outlined-text">Contributions</h1>
                     <div class="flex flex-col gap-3">
                     <h2 class="2xl:text-6xl lg:text-5xl text-4xl font-bold contrast-variable outlined-text mb-4 playfair-display-500 neg-letter">I accpet the following methods for contributing</h2>
                     <p class="font-bold !leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed contrast-variable outlined-text  lora-400">Thank you for your contribution towards my efforts in helping you discover yourself with the help of your High Self. Your contribution not only supports this sacred work but also signifies your commitment to your personal growth and healing. </p>
