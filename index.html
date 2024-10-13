@@ -23,6 +23,16 @@
       </script>
 </head>
 <body class="relative">
+   
+<div class="background-gradient min-h-screen">
+    <!-- <img src="img/flower.png" alt="Flower Background" class="absolute top-0 left-0 object-contain w-screen opacity-90"> -->
+    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
+    
     <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
             <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="#hero">quantum{L5D}</a></div>
@@ -35,16 +45,6 @@
             </nav>
         </header>
     </div>
-<div class="background-gradient">
-    <!-- <img src="img/flower.png" alt="Flower Background" class="absolute top-0 left-0 object-contain w-screen opacity-90"> -->
-    <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
-        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
-            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
-              class="toggle-circle"></span>
-        </button>
-    </div>
-    
-    
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
         :class="{ 'hidden': !open }"
@@ -79,11 +79,11 @@
               </div>
         </div>
     </div>
-    <div id="hero" class="min-h-screen relative mt-14 sm:mt-0 mb-10 lg:mb-40">
+    <div id="hero" class="min-h-screen relative sm:mt-0 mb-10 lg:mb-40">
         <div class="lg:max-w-screen-xl max-w-screen-md mx-auto px-4 sm:px-6 lg:px-8 pt-7 relative">
             <main>
                 <div class="flex flex-col">
-                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl contrast-variable font-semibold mt-4 md:mt-28 playfair-display-500 sm:text-center tracking-tighter md:more-neg-letter outlined-text inline-block mb-10 md:mb-20">Your higher self has a message for you</h1>
+                    <h1 class="2xl:text-9xl lg:text-8xl sm:text-7xl leading-tight text-6xl contrast-variable font-semibold md:mt-28 playfair-display-500 sm:text-center tracking-tighter md:more-neg-letter outlined-text inline-block md:mt-0 mt-32 mb-10 md:mb-20">Your higher self has a message for you</h1>
                     <!-- <p class="2xl:text-6xl lg:text-5xl more-neg-letter sm:text-4xl text-3xl dark-gray mb-12 playfair-display-500 w-10/12">- Lyndsey</p> -->
                 </div>
                 <div class="flex sm:items-center flex-col">
@@ -137,7 +137,7 @@
                     <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">In September 2023, I encountered a setback—a traumatic event that spiritually reset me to square one. Trauma has a way of sealing our heart centers, shifting our energy towards negativity. Reopening the heart and realigning with positivity is no small feat. Since that September, I've been on a path of recovery, only now beginning to emerge from the shadows. This ordeal was my dark night of the soul; at my peak, I had grown complacent, content with the knowledge I held, ceasing to seek further wisdom—a critical error. We must always pursue learning. The challenge pushed me to acquire new healing tools, starting with self-healing. A dark night of the soul serves to propel us into uncomfortable territories, where true growth occurs. For much of the past year, I've been mired in negativity, but now, I'm poised to progress. Through this ordeal, I've gained profound insights, discovered my true self, and recognized my capabilities—insights that are unshakable.</p>
                     <h2 class="2xl:text-6xl lg:text-5xl text-4xl !font-bold text-dark-gray-60 playfair-display-500 neg-letter">My Abilities</h2>
                     <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">My most profound ability is communicating with the higher self, or soul, a skill honed through encounters with my many 'walk-ins'. (A walk-in happens when one's current soul is switched for another from their soul star.) I've undergone this transformation multiple times, with my first in 2015. Walk-ins typically occur post near-death experiences or when one's internal vibration significantly increases, surpassing the body's current frequency. Our soul aligns with our vibration, whether it's high or low. A soul vibrating at a high frequency can't sustain in a lower frequency body, hence, a matching soul is provided. Soul replacements are more common than we realize; I estimate around 80% of people have experienced this phenomenon, likely more than once.</p>
-                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Your higher self is privy to every detail about you, holding your deepest secrets without a shred of judgment. They embody pure love and comprehension, serving as your eternal supporter, encouraging you never to surrender. My capacity to connect with YOUR higher self unlocks your path to healing. Together, with my skills and your higher self's guidance, your journey towards recovery is within reach. It's the moment to welcome this transformative voyage.</p>
+                    <p class="!leading-relaxed 2xl:text-xl sm:text-lg text-base leading-relaxed dark-gray lora-400">Your higher self is privy to every detail about you, holding your deepest secrets without a shred of judgment. They embody pure love and comprehension, serving as your eternal supporter, encouraging you never to surrender. My capacity to connect with YOUR higher self unlocks your path to healing. Together, with my skills and your higher self's guidance, your journey towards recovery is within reach. It's the moment to welcome this transformative voyage. </p>
                     </div>
                 </div>
         </div>
@@ -146,7 +146,7 @@
 <div id="exaplain" class="h-full relative mt-0 lg:mt-32">
     <div class="h-full w-full lg:max-w-screen-xl max-w-screen-md mx-auto">
         <div class="max-w-screen-xl z-20 mx-auto px-4 sm:px-6 lg:px-8 pt-7 relative">
-        <h2 class="2xl:text-8xl lg:text-7xl md:text-6xl text-5xl !font-bold dark-gray mb-4 playfair-display-500 neg-letter">Can you exaplain how the helaing works? </h2>
+        <h2 class="2xl:text-8xl lg:text-7xl md:text-6xl text-5xl !font-bold dark-gray mb-4 playfair-display-500 neg-letter">Can you exaplain how the healing works? </h2>
         <h3 class="2xl:text-6xl lg:text-5xl sm:text-4xl text-3xl !font-bold text-dark-gray-60 my-6 lora-400 neg-letter">A higher self healing -</h3>
         <div class="p-line-h flex flex-col gap-4">
             <p class="2xl:2xl:text-xl sm:text-lg text-base sm:text-lg text-base leading-relaxed dark-gray lora-400">I communicate with your higher self to convey messages or ask questions on your behalf, focusing on self-insight. Before healing, I, with the aid of my guides, remove any external negative energies as part of the process.</p>

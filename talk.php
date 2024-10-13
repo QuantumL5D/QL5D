@@ -23,7 +23,15 @@
 </head>
 
 <body class="relative">
-<div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
+<div class="background-gradient min-h-screen">
+<div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
+        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
+            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
+              class="toggle-circle"></span>
+        </button>
+    </div>
+    <div class="flex flex-col min-h-screen justify-between">
+    <div id="desktop-nav" class="sticky top-0 z-30 hidden sm:block">
         <header class="flex justify-between items-center max-w-screen-2xl mx-auto p-7">
             <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
@@ -35,14 +43,6 @@
             </nav>
         </header>
     </div>
-<div class="background-gradient min-h-screen">
-<div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
-        <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
-            <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
-              class="toggle-circle"></span>
-        </button>
-    </div>
-    <div class="min-h-screen flex flex-col justify-between">
     <div id="mobile-nav" class="block sm:hidden" x-data="{ open: false }">
         <div class="w-screen h-screen fixed top-0 left-0 z-30 bg-dark-gray opacity-60"
         :class="{ 'hidden': !open }"
@@ -53,7 +53,7 @@
             :class="{ 'hidden': !open }"
         x-bind:style="{ transform: open ? 'translateY(0)' : 'translateY(-100%)' }"
         style="transition: transform 0.5s; transform: translateY(-100%);">
-            <div class="text-5xl dark-gray handjet-500 text-center mt-10" ><a href="index.html">quantum{L5D}</a></div>
+            <div class="text-5xl dark-gray handjet-500 text-center font-bold mt-10" ><a href="index.html">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
                     <li class="!mx-0"><a href="index.html" class="mx-0 font-bold dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
