@@ -39,6 +39,7 @@
                     <li><a href="index.html" class="bg-theme-color dark-gray curser-pointer hover:opacity-80 button-border p-3">Home</a></li>
                     <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
                     <li><a href="contribute.html" class="bg-theme-color dark-gray curser-pointer hover:opacity-80 button-border p-3">Make a Contribution</a></li>
+                    <li><a href="lyndsey.php" class="bg-theme-color dark-gray curser-pointer hover:opacity-80 button-border p-3">Lyndsey Smith</a></li>
                 </ul>
             </nav>
         </header>
@@ -59,6 +60,7 @@
                     <li class="!mx-0"><a href="index.html" class="mx-0 font-bold dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Home</a></li>
                     <!-- <li class="!mx-0"><a href="#" class="mx-0 dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Learn</a></li> -->
                     <li class="!mx-0"><a href="contribute.html" class="mx-0 font-bold dark-gray curser-pointer hover:opacity-80 light-button-border p-3">Make a Contribution</a></li>
+                    <li class="!mx-0"><a href="lyndsey.php" class="mx-0 curser-pointer hover:opacity-80 font-bold dark-gray light-button-border p-3">Lyndsey Smith</a></li>
                 </ul>
             </nav>
         </header>
