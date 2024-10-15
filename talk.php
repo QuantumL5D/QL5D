@@ -23,7 +23,7 @@
 </head>
 
 <body class="relative">
-<div class="background-gradient min-h-screen">
+<div class="min-h-screen">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
             <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"
@@ -82,7 +82,7 @@
    
    <div id ="contactForm" class="h-full relative z-20 mt-14 sm:mt-0 mb-10 lg:mb-30">
         <div class="max-w-screen-xl mx-auto xl:py-10 lg:px-6 lg:py-7 px-3 py-3 relative">
-        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full contrast-variable outlined-text mx-auto">Ask About Your Message</h1>
+        <h1 class="2xl:text-9xl leading-none sm:leading-none lg:leading-normal  lg:text-8xl sm:text-7xl text-6xl text-center font-semibold text-dark playfair-display-500 more-neg-letter mb-4 inline-block w-full contrast-variable outlined-text mx-auto">Contact Lyndsey</h1>
 
     <form action="https://formspree.io/f/mrbznoyq" method="POST" class="mt-10 mx-auto md:w-3/4 2xl:w-2/3 w-full flex flex-col space-y-4">
         <div class="flex lg:gap-4 w-full">
