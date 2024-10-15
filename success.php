@@ -23,7 +23,7 @@
 </script>
 </head>
 <body class="relative"> 
-<div class="background-gradient relative min-h-screen">
+<div class="relative min-h-screen">
 <div class="fixed bottom-1 right-1 z-40" x-data="{ theme: false }">
         <button id="theme-toggle" @click="theme = !theme" class="toggle-padding">
             <span :style="'transform: translateX(' + (theme ? '17.2px' : '0px') + ');'"

@@ -46,6 +46,22 @@ body {
   background-color: var(--body-contrast);
 }
 
+/* .image-mask {
+  background-image: url('img/goldwall.png'); 
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-position: center;
+  color: transparent; 
+} */
+
+.width-40 {
+  width: 40%;
+}
+
+.width-20 {
+  width: 20%;
+}
+
 .in-between-bc {
 border-color: var(--in-between);
 }

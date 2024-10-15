@@ -37,7 +37,7 @@
             <div class="logo-text outlined-text-dark text-3xl font-bold handjet-700 hover:opacity-80"><a href="index.html">quantum{L5D}</a></div>
             <nav>
                 <ul class="flex space-x-4 2xl:text-2xl lg:text-xl sm:text-lg text-base handjet-700">
-                    <li><a href="talk.php" class="font-bold dark-gray curser-pointer hover:opacity-80 bg-theme-color button-border p-3">Ask About My Message</a></li>
+                    <li><a href="talk.php" class="font-bold dark-gray curser-pointer hover:opacity-80 bg-theme-color button-border p-3">Contact</a></li>
                     <!-- <li><a href="#" class="dark-gray curser-pointer hover:opacity-80 button-border p-3">Learn</a></li> -->
                     <li><a href="contribute.html" class="dark-gray font-bold curser-pointer bg-theme-color hover:opacity-80 button-border p-3">Make a Contribution</a></li>
                 </ul>
@@ -57,7 +57,7 @@
             <div class="text-5xl handjet-500 font-bold text-center dark-gray mt-10" ><a href="index.html" @click="open = false">quantum{L5D}</a></div>
             <nav >
                 <ul class="flex space-x-4 text-2xl handjet-500 flex-col flex gap-10 items-center">
-                    <li class="!mx-0"><a href="talk.php" class="mx-0 curser-pointer hover:opacity-80 font-bold light-button-border dark-gray p-3">Ask About My Message</a></li>
+                    <li class="!mx-0"><a href="talk.php" class="mx-0 curser-pointer hover:opacity-80 font-bold light-button-border dark-gray p-3">Contact</a></li>
                     <!-- <li class="!mx-0"><a href="#" class="mx-0 curser-pointer hover:opacity-80 light-button-border dark-gray p-3">Learn</a></li> -->
                     <li class="!mx-0"><a href="contribute.html" class="mx-0 curser-pointer hover:opacity-80 font-bold dark-gray light-button-border p-3">Make a Contribution</a></li>
                 </ul>
